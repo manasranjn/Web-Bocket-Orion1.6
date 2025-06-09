@@ -1,0 +1,12 @@
+#external{
+    color: blueviolet;
+    font-size: 50px;
+}
+
+#container{
+    background-color: burlywood;
+}
+
+#container img{
+    width: 300px;
+}

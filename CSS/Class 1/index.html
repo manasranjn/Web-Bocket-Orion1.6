@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Class 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        /* * {
+            background-color: aqua;
+            color: brown;
+        } */
+        #internal {
+            color: chocolate;
+        }
+
+        .head {
+            color: darkblue;
+        }
+
+        /* 
+        p {
+            color: darkgreen;
+        } */
+
+        .parent p {
+            color: red;
+        }
+
+        #para,
+        .heading,
+        span {
+            color: cadetblue;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1
+        style="color: red; background-color: black; text-align: center; font-size: 30px; font-family: 'Courier New', Courier, monospace;">
+        Inline CSS </h1>
+    <p
+        style="font-size: 25px; font-family: 'Roboto', sans-serif;  text-decoration: overline; text-transform: capitalize; font-weight: 900; font-style: italic;">
+        This is a
+        paragraph</p>
+
+    <h2 id="internal">Internal CSS</h2>
+    <h2 class="head">Class Selector</h2>
+    <h2 class="head">Class Selector</h2>
+    <h2 class="head">Class Selector</h2>
+    <p>This is a paragraph</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae velit perspiciatis a exercitationem dolorem
+        suscipit eligendi, </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae velit perspiciatis a exercitationem dolorem
+        suscipit eligendi, </p>
+
+
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fuga fugiat magnam similique facere? Nemo hic
+            adipisci, ab modi distinctio dignissimos laborum voluptas maiores fuga ea neque nihil deserunt perspiciatis.
+        </p>
+    </div>
+
+
+    <!-- <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quia.</p>
+
+    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quia.</h4>
+    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quia.</h4>
+    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quia.</h4>
+    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quia.</h4>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quia.</span> -->
+
+    <h2 id="external">External CSS</h2>
+
+    <div id="container">
+        <img src="../../HTML/fluffy-bird-string-9589605_1280.webp" alt="flower">
+    </div>
+</body>
+
+</html>
