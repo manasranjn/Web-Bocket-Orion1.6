@@ -124,3 +124,31 @@ e.g:-
 .text {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
+# Display Properties:- 
+-It specifies how an element must be aligned or stuctured in a web-page.
+-There are 4-types of display properties.
+1. Block:- The elements that are block, will be displayed one by one & occupies 100% width of the web-page.
+-We can change the height and width of a block element.
+
+2. Inline:- The elements will be displayed in the same row where height and width properties will not work.
+
+3. Inline-block:- Displays all the element in the same row and also can change height and width. 
+
+4. None:- The element will not display in the web page
+
+
+# Flex-box:-
+-This property is used to structure the elements in row wise or column wise by giving space allocation for individual elements within the flex area.
+Properties:-
+1. flex-direction:- It specifies from which direction the elements should be aligned.
+Values:-
+flex-direction: row/row-reverse/column/column-reverse ;
+
+2. align-items:- This property is used to align the items vertically in flex area.
+Values:-
+align-items: flex-start/center/flex-end ;
+
+3. justify-content:- This is used to align the elements horizontally in the flex area.
+Values:-
+justify-content: start/center/end/space-between/space-around/space-evenly
