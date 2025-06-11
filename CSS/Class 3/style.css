@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    background-color: blueviolet;
+    height: 200px;
+    width: 400px;
+    margin: 40px auto;
+    padding: 40px;
+    border: 10px solid red;
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
+    box-shadow: -10px -10px 10px black;
+}
+.box p{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.block{
+    background-color: brown;
+    display: block;
+    height: 80px;
+    width: 200px;
+}
+.inline{
+    background-color: rgb(42, 87, 165);
+    display: inline;
+    height: 80px;
+    width: 200px;
+}
+.inline-block{
+    background-color: coral;
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+}
+.none{
+    background-color: rgb(27, 112, 10);
+    display: none;
+    height: 100px;
+    width: 200px;
+}
+
+.parent{
+    background-color: crimson;
+    height: 600px;
+    display: flex;
+    flex-direction:  row;
+    /* flex-direction:  row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: left; */
+    /* justify-content: center; */
+    /* justify-content: right; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* align-items: start; */
+    /* align-items: center; */
+    /* align-items: end; */
+    flex-wrap: wrap;
+    gap: 10px;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+    /* overflow-y: auto; */
+}
+.child{
+    background-color: darkcyan;
+    height: 100px;
+    width: 150px;
+    color: aliceblue;
+    /* margin-right: 10px;
+    margin-bottom: 10px; */
+    /* margin: 10px; */
+}
