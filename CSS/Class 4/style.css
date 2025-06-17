@@ -1,0 +1,46 @@
+.parent{
+    background-color: cornflowerblue;
+    width: 100vw;
+    height: 500px;
+    display: grid;
+    /* grid-template-columns: 100px 110px 100px; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /* grid-gap: 50px; */
+    /* gap: 60px; */
+}
+.grid{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+}
+
+.container{
+    height: 400px;
+    width: 600px;
+    background-color: cadetblue;
+}
+section{
+    /* height: 50%; */
+    /* width: 50%; */
+    /* height: 50vh; */
+    width: 50vw;
+    height: 50vmax;
+    background-color: blue;
+}
+#head{
+    color: red;
+    font-size: 2rem;
+}
+.text{
+    font-size: 25px;
+}
+#heading{
+    color: green;
+    font-size: 2em;
+}
