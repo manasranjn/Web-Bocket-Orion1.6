@@ -1,0 +1,100 @@
+*{
+    margin: 0;padding: 0;
+}
+.rotate{
+    height: 200px;
+    width: 200px;
+    background-color: chocolate;
+    margin: 50px;
+    /* transform: rotateX(60deg); */
+    /* transform: rotateY(50deg); */
+    /* transform: rotateZ(50deg); */
+    /* transform: rotate(50deg); */
+
+    /* transform: scaleX(1.5); */
+    /* transform: scaleY(.5); */
+    /* transform: scaleZ(1.5); */
+    /* transform: scale(1.5, .5); */
+
+    /* transform: translateX(100px); */
+    /* transform: translateY(100px); */
+    /* transform: translate(100px, 100px); */
+
+    /* transform: skewX(45deg); */
+    /* transform: skewY(45deg); */
+    /* transform: skew(15deg, 45deg); */
+}
+#btn{
+    background-color: cadetblue;
+    color: white;
+    /* padding: 15px 30px; */
+    height: 40px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    /* transition-property:  all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s; */
+    transition: transform 0.1s ease-in;
+}
+#btn:active{
+    background-color: rgb(39, 106, 108);
+    transform: scale(0.9);
+}
+
+.static{
+    height: 100px;
+    width: 100px;
+    background-color: chocolate;
+    position: static;
+    top: 100px;
+}
+.relative{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.absolute{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    /* z-index: -1; */
+}
+.fixed{
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+    position: fixed;
+    top: 20px;
+    right: 0px;
+    /* z-index: -1; */
+}
+.sticky{
+    height: 80px;
+    width: 80px;
+    background-color: yellow;
+    position: sticky;
+    bottom: 0px;
+    left: 50px;
+    z-index: 1;
+}
+.example{
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+    position: fixed;
+    right: 0;
+    top: 40%;
+}
