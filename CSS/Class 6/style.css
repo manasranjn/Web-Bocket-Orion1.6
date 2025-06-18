@@ -1,0 +1,86 @@
+.box{
+    background-color: brown;
+    height: 600px;
+    width: 1200px;
+}
+@media screen and (max-width: 425px){
+    .box{
+        background-color: blue;
+        width: 200px;
+    }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+    .box{
+        background-color: green;
+        width: 500px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .box{
+        background-color: purple;
+        width: 800px;
+    }
+}
+
+.spinner{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border: 10px dashed black;
+    border-radius: 50%;
+    border-top: 10px dashed white;
+    /* animation-name: spinner;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-delay: 5s; */
+    animation: spinner 3s infinite ease-in-out alternate ;
+}
+@keyframes spinner{
+    /* from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    } */
+     0%{
+        transform: rotate(0deg);
+     }
+     25%{
+        transform: rotate(90deg);
+     }
+     50%{
+        transform: rotate(180deg);
+     }
+     75%{
+        transform: rotate(270deg);
+     }
+     100%{
+        transform: rotate(360deg);
+     }
+}
+
+.container{
+    height: 600px;
+    width: 200px;
+    background-color: cadetblue;
+    margin: auto;
+}
+.ball{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    margin: auto;
+    animation: drop 2s infinite ease alternate;
+}
+
+@keyframes drop{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(500px);
+    }
+}
