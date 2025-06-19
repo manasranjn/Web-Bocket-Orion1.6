@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+     font-family: "Roboto", sans-serif;
+}
+header{
+    margin: 0px 100px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 60px;
+    align-items: center;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.left input{
+    padding: 8px 10px;
+    padding-left: 30px;
+    font-size: 15px;
+    width: 450px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 2px;
+}
+.left input::placeholder{
+    color: #8080809e;
+}
+.left i{
+    position: relative;
+    left: 25px;
+    font-size: 12px;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right select{
+    border: none;
+    outline: none;
+}
+.right button{
+    background-color: #F84464;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+.right i{
+    font-size: 20px;
+    cursor: pointer;
+    color: grey;
+}
+.navLinks{
+    padding: 10px 100px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+
+}
+#links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+}
+#offers{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    font-size: 14px;
+}
+.banner{
+    padding: 10px 100px;
+    background-color: #EBEBEB;
+}
+.banner img{
+    border-radius: 10px;
+    width: 100%;
+}
+.recommended-movies{
+    margin: 40px 100px;
+    background-color: white;
+}
+.recommended-movies .header{
+    display: flex;
+    justify-content: space-between;
+}
+.header h3{
+    font-size: 27px;
+}
+.header a{
+    color: #F84464;
+    font-size: 14px;
+}
+.movies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin-top: 10px;
+}
+/* #movie1{
+    grid-column: span 2;
+    grid-row: span 2;
+} */
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+@media (max-width: 426px){
+    nav{
+        display: none;
+    }
+    .navLinks{
+        display: none;
+    }
+    .banner{
+        padding: 10px 10px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    header{
+        margin: 0px 10px;
+    }
+    .left svg{
+        display: none;
+    }
+    .left input{
+        width:90vw ;
+    }
+    .right{
+        display: none;
+    }
+    .navLinks{
+        padding: 10px 0px;
+    }
+    #offers{
+        display: none;
+    }
+    .banner{
+        padding: 10px 40px;
+    }
+}
