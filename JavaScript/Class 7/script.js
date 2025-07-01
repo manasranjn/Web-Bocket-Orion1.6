@@ -14,7 +14,7 @@ const box = document.getElementById("box")
 
 let newHeading = document.createElement("h1")
 newHeading.innerText = "This is a new Heading"
-console.log(newHeading);
+// console.log(newHeading);
 newHeading.setAttribute("id", "newh1")
 
 // box.prepend(newHeading)
@@ -24,3 +24,28 @@ box.after(newHeading)
 newHeading.style.backgroundColor = "green"
 
 // box.remove()
+
+const obj = {
+    name: "Soumya",
+    age: 21,
+    address: "Kolathia",
+    course: "B.Tech"
+}
+const student1 = {
+    __proto__: obj,
+    name: "ABCD"
+
+}
+
+// console.log(obj.address);
+// console.log(student1.address);
+// console.log(student1.name);
+
+// const student2 = Object.create(obj)
+// console.log(student2.age);
+
+
+// let name = prompt("Enter your name")
+// console.log(name);
+
+// alert("Warning")
