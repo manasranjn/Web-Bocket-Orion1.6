@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: cornsilk;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 450px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.123);
+        }
+
+        form h1 {
+            font-size: 25px;
+            color: orange;
+            text-align: center;
+        }
+
+        form h3 {
+            font-size: 20px;
+            color: black;
+            background-color: antiquewhite;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .name {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <form action="">
+            <h1>YourCompany</h1>
+            <h3>Webinar Registration</h3>
+            <div class="name">
+                <div>
+                    <label for="">First Name</label>
+                    <input type="text" placeholder="Enter your first name">
+                </div>
+                <div>
+                    <label for="">Last Name</label>
+                    <input type="text" placeholder="Enter your last name">
+                </div>
+            </div>
+        </form>
+    </div> -->
+
+    <button id="btn" style="padding: 10px 20px; font-size: 20px;" onclick="clickButton()">Click</button>
+
+    <button style="padding: 10px 20px; font-size: 20px;" id="btn2">Click Here</button>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
