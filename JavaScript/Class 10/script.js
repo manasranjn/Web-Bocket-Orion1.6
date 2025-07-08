@@ -70,7 +70,12 @@ const box = document.getElementById("box")
 const button = document.getElementById("btn")
 
 button.onclick = () => {
-    box.style.backgroundColor = "red"
+    if (box.style.backgroundColor === "black") {
+        box.style.backgroundColor = "white"
+    } else {
+        box.style.backgroundColor = "black"
+
+    }
 }
 // console.log(a); // not allowed
 console.log(b);
@@ -87,9 +92,9 @@ function example() {
 
 }
 
-example()
+// example()
 // check() // not allowed
 const check = () => {
     console.log("Hoisting not allowed");
 }
-check()
+// check()
