@@ -114,7 +114,7 @@ functionName();
 7. Greater than equal to (>=): Checks if left operand is greater than or equal to right operand.
 8. Less than equal to (<=): Checks if left operand is less than or equal to right operand.
 
-## Logical Opercators :-
+## Logical Operators :-
 1. Logical AND (&&): Returns true if both operands are true.
 2. Logical OR (||): Returns true if either of the operands is true.
 3. Logical NOT (!): Returns the opposite of the operand's boolean value.
