@@ -18,7 +18,10 @@ Q. What is Single-page Application ?
 1. Single-Page-Application (SPA)
 - e.g :- Whatsapp, facebook, Gmail, etc ..
 
-2. Virtual DOM
+2. Virtual DOM:-
+-It is a blueprint of real-DOM.
+-Whenever we run react application for the 1st time DOM structure is going to get created, parallely a copy of real-DOM id also going to get genereted. This is called as virtual-DOM.
+
 3. Component based Architecture(CBA):- React follows CBA, because we can reuse the components, better code maintainability.
 - Web pages will be divided into small parts and that small parts are called components.
 - Components can be reused in different web pages.
@@ -36,10 +39,86 @@ Q. What is Single-page Application ?
 
 3. src :
 - It is a source folder where we are going to write our codes.
-- The 2 important files we have to maintain is "index.js"/main.jsx and "App.js/App.jsx".
+- The 2 important files we have to maintain is "index.js/main.jsx" and "App.js/App.jsx".
   - index.js : It is considered as a root file of react.js
   - App.js : It is considered as parent component of react.js
 
 4. package.json & package-lock.json :
 - These are the two files where it is considered as directories of the react folder.
 - It will give all the information about libraries present in the project.
+
+## Rules while creating a Component in ReactJS
+1. First letter should be capital.
+2. It should be written in PascalCase.
+3. File extension of component is ".js" or ".jsx".
+   e.g : App.jsx , App.js , Content.jsx
+
+# What is JSX ?
+- it is a combitation of JavaScript and XML (Extensible Markup Language).
+
+## Difference between HTML and XML
+1. - In HTML we will be using an attribute as "class"
+- In XML we will be using an attribute as "className"
+
+2. - All the events in HTML we use are in lowercase.
+     e.g : onclick, onmouseover
+- In XML we use events in camelCase.
+  e.g: onMouseOver, onClick
+
+3. - In HTML we can write two or more different tags/elements
+     e.g: <h1> This is heading 1</h1>
+     <h1> This is heading 2</h1>
+- In XML we have to wrap all the elements into one parent container.
+  e.g: <div>
+  <h1> This is heading 1</h1>
+  <h1> This is heading 2</h1>
+  </div>
+
+# React Project Setup
+## Using CRA(create-react-app)
+- npx create-react-app <project-name>
+- cd <project-name>
+- npm start (or) npm run start
+
+## Using Vite
+- npm create vite@latest <project-name>
+- cd <project-name>
+- npm install
+- npm run dev
+
+- After installation of react-project, we will be getting some default folders and files.
+  Now we have to maintain two important files in "src" folder - index.js(main.jsx) and App.jsx.
+
+1. index.js(main.jsx) :
+- It is considered as a root file of react.js project.
+- We are using this file to create root between index.html and App.jsx.
+
+2. App.jsx :
+- It is considered as parent component of react.js project.
+- It is a component where we are going to write our codes.
+
+index.js(main.jsx) :
+import { createRoot } from "react-dom/client";
+import App from "./App";
+import { StrictMode } from "react";
+
+const root = createRoot(document.getElementById("root"));
+root.render(
+<StrictMode>
+<App />
+</StrictMode>
+);
+
+App.jsx :
+import React from "react";
+
+const App = () => {
+return (
+
+<div>
+<h1>App Component</h1>
+</div>
+);
+};
+
+export default App;
