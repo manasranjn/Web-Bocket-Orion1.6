@@ -663,3 +663,6 @@ A router in React JS is a library that allows us to navigate between different p
 - Nested-Routes - You can also define nested routes in React JS by using the Route component inside another Route component. This allows you to create more complex routes and nested navigation in your application.
 - Route Parameters - You can also define route parameters in React JS by adding a colon followed by a parameter name in the path of the Route component. The parameter value can then be accessed in the component that is rendered for that route.
 - Route-Guards - You can also add route guards in React JS to protect certain routes from being accessed by unauthorized users. This can be done by adding a function that checks if the user is authenticated before allowing access to the route.
+
+
+npx json-server Database/db.json --watch --port 5000
