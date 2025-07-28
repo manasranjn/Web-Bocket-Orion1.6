@@ -1,9 +1,19 @@
 {
   "posts": [
     {
-      "id": "3b38",
-      "title": "Choose the perfect design",
-      "description": "Create a beautiful blog that fits your style. Choose from a selection of easy-to-use templates – all with flexible layouts and hundreds of background images – or design something new."
+      "title": "How to Write the Perfect Blog Post: My 10,000 Word Journey",
+      "description": "Starting a blog was one of the most rewarding things I’ve done in my career. As someone who loves writing and connecting with readers, having an outlet to share my thoughts while potentially helping others has been an incredible experience.",
+      "id": "c660"
+    },
+    {
+      "id": "7147",
+      "title": "How to Write a Blog Post, Step 2: Conduct Keyword Research",
+      "description": "One of the best ways to find good blog post ideas is to conduct keyword research to see what terms and questions people are searching for in your niche. Tools like Google’s Keyword Planner, SEMrush, and Ahrefs make this easy."
+    },
+    {
+      "id": "7c3c",
+      "title": "How I Choose Blog Post Topics",
+      "description": "To give you an inside look, here is my personal process for choosing blog post topics:\n\nI start by checking Google Analytics to view my top-performing posts from the previous month. Seeing which posts attracted the most visitors helps me identify content themes and formats my readers respond to."
     }
   ]
 }
