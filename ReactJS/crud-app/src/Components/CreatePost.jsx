@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 const CreatePost = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [image, setImage] = useState("");
   const [warning, setWarning] = useState("");
   const [error, setError] = useState("");
 
@@ -22,7 +21,6 @@ const CreatePost = () => {
     const data = {
       title: title,
       description: description,
-      image: image,
     };
 
     axios
@@ -41,7 +39,10 @@ const CreatePost = () => {
 
   return (
     <div className="h-screen flex flex-col justify-center items-center bg-[#F4EBD3]">
-      <form className="bg-gray-700 p-6 rounded-md shadow-lg text-center flex flex-col gap-4 max-w-2xl w-[80%]">
+      <form
+        className="bg-gray-700 p-6 rounded-md shadow-lg text-center flex flex-col gap-4 max-w-2xl w-[80%]"
+        onSubmit={handleSubmit}
+      >
         <h1 className="text-lg md:text-xl lg:text-3xl text-white">
           Create Post
         </h1>
@@ -58,17 +59,9 @@ const CreatePost = () => {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         ></textarea>
-        <input
-          type="file"
-          value={image}
-          onChange={(e) => setImage(e.target.value)}
-        />
         {warning && <p className="text-red-600">{warning}</p>}
         {error && <p className="text-red-600">{error}</p>}
-        <button
-          className="bg-green-600 hover:bg-green-500 active:bg-green-700 p-3 rounded-md text-white text-base md:text-lg lg:text-xl font-semibold active:scale-95 transition duration-150 flex gap-5 justify-center items-center cursor-pointer"
-          onClick={handleSubmit}
-        >
+        <button className="bg-green-600 hover:bg-green-500 active:bg-green-700 p-3 rounded-md text-white text-base md:text-lg lg:text-xl font-semibold active:scale-95 transition duration-150 flex gap-5 justify-center items-center cursor-pointer">
           Create Post <IoIosCreate />
         </button>
       </form>
